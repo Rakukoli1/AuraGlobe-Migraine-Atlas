@@ -72,7 +72,7 @@
 <main>
 
   <h1>AuraGlobe: Migraine Atlas — Privacy Policy</h1>
-  <p class="sub">Last updated: 15 July 2026 &middot; Effective: 15 July 2026</p>
+  <p class="sub">Last updated: 16 September 2026 &middot; Effective: 16 September 2026</p>
 
   <p>This policy explains how the iOS application AuraGlobe: Migraine Atlas ("the app") handles
   information and treats your privacy.</p>
@@ -85,12 +85,17 @@
   about you. You cannot enter symptoms, migraine episodes, or any other personal or health data
   into the app, because the app has no facility to do so.</p>
 
-  <h2>2. Personal data we collect: none</h2>
-  <p>We do not collect, receive, store, sell, share, or otherwise process any personal data about you.
-  We have no technical means of doing so: the app communicates with no server operated by or on behalf
-  of us.</p>
-  <p>This corresponds to the "Data Not Collected" declaration on the app's App Store privacy
-  information.</p>
+  <h2>2. The data involved, in short</h2>
+  <p>We do not collect any data that identifies you personally. We never receive your name, email
+  address, contacts, precise location, or any health information, and the app has no server operated by
+  or on behalf of us.</p>
+  <p>The app does use one third-party service, RevenueCat, to understand how the app is used in
+  aggregate — for example how many people are using it, how many free trials are active, and overall
+  subscription revenue. RevenueCat receives a limited amount of anonymous, non-personal information tied
+  to a random identifier, not to your name or Apple ID. This is described in full in section 8.</p>
+  <p>On the App Store privacy information for the app, this corresponds to declaring Purchases,
+  Identifiers, and Usage Data, collected for analytics, not linked to your identity, and not used to
+  track you.</p>
 
   <h2>3. What the app stores on your device</h2>
   <p>The app saves a small amount of information locally on your device so it can remember your
@@ -103,21 +108,21 @@
     </thead>
     <tbody>
       <tr><td>Appearance (dark/light) and temperature unit (&deg;C/&deg;F)</td><td>To keep the app looking the way you set it</td></tr>
-      <tr><td>Globe options — idle spin, spin speed, clouds, starfield, sun &amp; comet, markers</td><td>To keep the globe the way you set it</td></tr>
-      <tr><td>Which places you have opened</td><td>To apply the free-tier allowance and to avoid charging you twice for a place you have already opened</td></tr>
+      <tr><td>Globe options — idle spin, spin speed, clouds, cloud density, starfield, sun &amp; comet, markers</td><td>To keep the globe the way you set it</td></tr>
+      <tr><td>Which places you have opened, and which pairs of places you have compared</td><td>To apply the free-tier allowances and to avoid charging you twice for something you have already opened or compared</td></tr>
       <tr><td>Whether you have seen the introductory hint</td><td>So it is not shown repeatedly</td></tr>
       <tr><td>If you use Sign in with Apple: your Apple user identifier and the given name you chose to share</td><td>To display that you are signed in, and to show your name</td></tr>
     </tbody>
   </table>
   </div>
   <p>This information is removed when you delete the app, or at any time via
-  Settings &rarr; Delete account inside the app (see section 8).</p>
+  Settings &rarr; Delete account inside the app (see section 9).</p>
 
   <h2>4. iCloud sync (optional, off by default)</h2>
   <p>If you turn on Sync via iCloud in the app's Profile screen, the preferences listed
   in section 3 — your appearance and unit settings, your globe options, the list of places you have
-  opened, and the given name from Sign in with Apple, if any — are stored in
-  your own iCloud account using Apple's iCloud key-value storage, so they follow you
+  opened, the pairs you have compared, and the given name from Sign in with Apple, if any — are stored
+  in your own iCloud account using Apple's iCloud key-value storage, so they follow you
   across your Apple devices.</p>
   <p>This data resides in your iCloud account under your Apple ID.
   We have no access to it and cannot read, retrieve, or delete it. Your Apple user
@@ -154,15 +159,47 @@
     <li>We never receive or have access to your payment card details, billing address,
         or Apple ID credentials.</li>
     <li>Your purchase is verified on your device using Apple's cryptographically signed
-        receipts. No purchase information is sent to us.</li>
+        receipts.</li>
     <li>Restoring purchases is handled by Apple against your Apple ID.</li>
   </ul>
   <p>Apple's handling of your purchase is governed by the
   <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple Privacy Policy</a>. Apple may
-  provide us with aggregated, anonymous sales reports that do not identify individual users.</p>
+  provide us with aggregated, anonymous sales reports that do not identify individual users. Anonymous
+  information about your purchase is also shared with our analytics provider, RevenueCat, as described in
+  section 8.</p>
 
-  <h2>8. Retention and deletion</h2>
-  <p>Because we hold no data about you, there is nothing for us to retain or delete on our side.</p>
+  <h2>8. Analytics and purchase reporting (RevenueCat)</h2>
+  <p>The app includes a software development kit from RevenueCat, Inc. We use it only to see anonymous,
+  aggregate statistics about the app — principally the number of active users, the number of active free
+  trials, and overall subscription revenue. We do not use it to identify you or to contact you.</p>
+  <p>Our own purchase code, running on your device, completes and verifies every purchase using Apple's
+  system (see section 7). RevenueCat operates in a purchase-observing mode: it reads the purchase
+  transactions that Apple has already completed on your device so it can report them. It does not process
+  your payment and is not required for the app or your purchases to work.</p>
+  <p>Information sent to RevenueCat for this purpose includes:</p>
+  <ul>
+    <li>A random, app-generated identifier that RevenueCat assigns to the installation. It is not your
+        name, email, or Apple ID, and we do not provide RevenueCat with any of those.</li>
+    <li>Your device's vendor identifier (the Apple "identifier for vendor"), device model, operating
+        system version, app version, language, and the country or region derived from your network
+        connection.</li>
+    <li>Details of your in-app purchases and subscriptions — for example the product purchased, the
+        price and currency, and the purchase, trial, and renewal dates.</li>
+  </ul>
+  <p>What RevenueCat does not receive from us: your name, email address, contacts, precise location, or
+  any health information. This data is used for analytics only. It is not used for advertising, and it is
+  not used to track you across other companies' apps or websites, so it does not involve Apple's App
+  Tracking Transparency prompt.</p>
+  <p>RevenueCat acts as our data processor and stores this information on its servers in the United
+  States. Its handling of the data is governed by the
+  <a href="https://www.revenuecat.com/privacy/" rel="noopener">RevenueCat Privacy Policy</a>. If you
+  would like us to help you make a request in respect of the data associated with your installation,
+  contact us at <a href="mailto:rakukoli65@gmail.com">rakukoli65@gmail.com</a> (see also section 13).</p>
+
+  <h2>9. Retention and deletion</h2>
+  <p>We hold no data that identifies you, so there is nothing personal to you for us to retain or delete
+  on our side. The analytics described in section 8 are anonymous and are retained by RevenueCat under
+  its own policy.</p>
   <p>Data held on your device or in your iCloud is under your control:</p>
   <ul>
     <li>Settings &rarr; Delete account inside the app erases the locally stored
@@ -171,60 +208,66 @@
     <li>You can manage or remove iCloud data through your device's iCloud settings.</li>
   </ul>
 
-  <h2>9. What we never do</h2>
+  <h2>10. What we never do</h2>
   <ul>
-    <li>We do not track you, across this app or any other app or website.</li>
-    <li>We do not use analytics, advertising, attribution, or crash-reporting services.</li>
-    <li>The app contains no third-party software development kits.</li>
-    <li>We do not use cookies or device advertising identifiers (IDFA).</li>
-    <li>We do not build profiles of users, and we carry out no automated decision-making.</li>
+    <li>We do not collect any information that identifies you personally.</li>
+    <li>We do not track you across other companies' apps or websites, and we show no advertising.</li>
+    <li>Aside from RevenueCat, used only for the anonymous analytics described in section 8, the app
+        contains no third-party software development kits. We use no advertising, attribution, or
+        cross-app tracking services.</li>
+    <li>We do not use cookies or the device advertising identifier (IDFA).</li>
+    <li>We do not build profiles of individual users, and we carry out no automated decision-making.</li>
     <li>We do not sell or share personal information, as those terms are defined under the California
         Consumer Privacy Act. We never have.</li>
   </ul>
 
-  <h2>10. Links to other services</h2>
+  <h2>11. Links to other services</h2>
   <p>The app contains links to external websites — for example data-source credits (GeoNames, Solar
-  System Scope, GitHub), Apple's weather attribution page, and an App Store listing for another app by
-  the same developer. Opening a link leaves AuraGlobe: Migraine Atlas and opens your browser or the App Store. We are
-  not responsible for the privacy practices of those sites, and this policy does not apply to them.</p>
+  System Scope, GitHub), Apple's weather attribution page, an Instagram page, and an App Store listing
+  for another app by the same developer. Opening a link leaves AuraGlobe: Migraine Atlas and opens your
+  browser or the relevant app. We are not responsible for the privacy practices of those sites, and this
+  policy does not apply to them.</p>
 
-  <h2>11. Children's privacy</h2>
-  <p>AuraGlobe: Migraine Atlas is a general-audience reference app and is not directed at children. Because the app
-  collects no personal data from anyone, it collects no personal data from children. We do not knowingly
-  collect information from children under 13 (or the equivalent minimum age in your jurisdiction).</p>
+  <h2>12. Children's privacy</h2>
+  <p>AuraGlobe: Migraine Atlas is a general-audience reference app and is not directed at children. It
+  collects no personal data from anyone, and so collects no personal data from children. We do not
+  knowingly collect information from children under 13 (or the equivalent minimum age in your
+  jurisdiction).</p>
 
-  <h2>12. Your rights</h2>
+  <h2>13. Your rights</h2>
   <p>Privacy laws including the EU and UK General Data Protection Regulation (GDPR) and the California
   Consumer Privacy Act (CCPA/CPRA) give you rights over personal data that a company holds about you —
   such as access, correction, deletion, portability, and objection.</p>
-  <p>We hold no personal data about you, so there is nothing for us to disclose, correct,
-  export, or erase, and no data for you to opt out of being sold or shared. Any data described in this
-  policy sits on your own device or in your own iCloud account, where you already control it directly
-  (see section 8).</p>
-  <p>If you believe we hold data about you and wish to exercise a right, contact us at
+  <p>We hold no data that identifies you, and the analytics we do use are anonymous, so in most cases
+  there is nothing tied to you for us to disclose, correct, export, or erase, and no data for you to opt
+  out of being sold or shared. Any data described in this policy that sits on your own device or in your
+  own iCloud account is already under your direct control (see section 9).</p>
+  <p>If you wish to exercise a right, contact us at
   <a href="mailto:rakukoli65@gmail.com">rakukoli65@gmail.com</a> and we will respond within the
-  period required by applicable law. If you are in the EEA or UK, you also have the right to lodge a
-  complaint with your local data protection authority.</p>
+  period required by applicable law, including passing appropriate requests to RevenueCat where relevant.
+  If you are in the EEA or UK, you also have the right to lodge a complaint with your local data
+  protection authority.</p>
 
-  <h2>13. International users</h2>
-  <p>The app is available worldwide. As we collect no personal data, we carry out no international
-  transfers of personal data. Data you keep in iCloud is stored and transferred by Apple in accordance
-  with Apple's own policies.</p>
+  <h2>14. International users</h2>
+  <p>The app is available worldwide. The anonymous analytics described in section 8 are processed by
+  RevenueCat in the United States. Data you keep in iCloud is stored and transferred by Apple in
+  accordance with Apple's own policies. Aside from these, we carry out no international transfers of
+  personal data, because we hold none.</p>
 
-  <h2>14. Security</h2>
+  <h2>15. Security</h2>
   <p>Data stored on your device is protected by iOS and your device passcode, Face ID, or Touch ID.
   Data stored in your iCloud account is protected by Apple's security measures and your Apple ID
-  credentials. Because we operate no servers and hold no data, there is no database of ours that could
-  be breached.</p>
+  credentials. Information sent to RevenueCat is transmitted over an encrypted connection. Because we
+  operate no servers and hold no data ourselves, there is no database of ours that could be breached.</p>
 
-  <h2>15. Changes to this policy</h2>
+  <h2>16. Changes to this policy</h2>
   <p>We may update this policy if the app changes — for example if a future version adds a feature that
   handles data differently. The "Last updated" date at the top will always reflect the current version,
   and the current policy will always be available at this address. Material changes will be reflected
   here before or when the relevant app update is released. Continuing to use the app after a change means
   you accept the updated policy.</p>
 
-  <h2>16. Contact</h2>
+  <h2>17. Contact</h2>
   <p>Questions about this policy or about privacy in AuraGlobe: Migraine Atlas:<br>
   <a href="mailto:rakukoli65@gmail.com">rakukoli65@gmail.com</a></p>
 
